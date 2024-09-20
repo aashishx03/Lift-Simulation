@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+}
+.setup {
+  padding-left: 10vh;
+  margin: 0 auto;
+}
+
+.floor {
+  height: 120px;
+  border-bottom: 2px solid black;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.btn-up,
+.btn-down {
+  background: coral;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px 0;
+}
+.btn .bx {
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.lift-area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.lift {
+  height: 100%;
+  width: 9%;
+  border: 2px solid black;
+}
