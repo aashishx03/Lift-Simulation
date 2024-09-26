@@ -72,7 +72,7 @@ function addLifts(numberOfLifts) {
         <div class="right-door door"></div>
       </div>
     `;
-    liftArea[liftArea.length - 1].insertAdjacentHTML("afterbegin", liftHtml);
+    liftArea[liftArea.length - 1].insertAdjacentHTML("beforeend", liftHtml);
 
     // Set initial position and status of lifts
     const liftElement = document.querySelector(`.lift[data-id="${i}"]`);
