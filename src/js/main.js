@@ -176,11 +176,18 @@ function closeDoors(lift) {
 }
 
 function validateInput(noOfFloors, noOfLifts) {
+  console.log(noOfFloors, noOfLifts, 5, "5");
   if (isNaN(noOfFloors) || isNaN(noOfLifts)) {
     alert("Please Enter Valid Numeric Values");
     return false;
   } else if (!noOfFloors || !noOfLifts) {
     alert("Please Enter Valid Numbers");
+    return false;
+  } else if (
+    !Number.isInteger(parseFloat(noOfFloors)) ||
+    !Number.isInteger(parseFloat(noOfLifts))
+  ) {
+    alert("Please Enter Integar Value");
     return false;
   } else if (noOfFloors <= 0 || noOfLifts <= 0) {
     alert("Please Enter Valid Numbers");
