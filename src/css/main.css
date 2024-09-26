@@ -14,7 +14,7 @@
 }
 
 .floor {
-  height: 120px;
+  height: 80px;
   border-bottom: 2px solid black;
   margin-left: 20px;
   text-align: center;
@@ -48,6 +48,23 @@
 }
 .lift {
   height: 100%;
-  width: 9%;
+  width: 50px;
   border: 2px solid black;
+  display: flex;
+}
+.door {
+  height: 100%;
+  width: 50%;
+  background: gray;
+  border: 1px solid black;
+  position: relative;
+  transition: 2.5s;
+}
+
+.left-door.open {
+  transform: translateX(-70%) skewY(5deg);
+}
+
+.right-door.open {
+  transform: translateX(70%) skewY(-5deg);
 }
